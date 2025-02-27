@@ -1,0 +1,7 @@
+#!/bin/bash
+
+THRESHOLD=80
+
+echo "===== Disk Space Usage ====="
+df -h | awk '{if ($5+0 > 80) print $0}'
+
