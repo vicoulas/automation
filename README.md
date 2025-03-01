@@ -10,21 +10,19 @@ Additionally, it uses newsyslog for log rotation to preven excessive log growth.
 
 The following scripts collect system metrics:
 
-- cpu_mem_monitor.sh
+cpu_mem_monitor.sh
 
-Monitors CPU and memory usage.
+- Monitors CPU and memory usage.
+- Outputs data to /var/log/system_monitor.log.
 
-Outputs data to /var/log/system_monitor.log.
+disk_monitor.sh
 
-- disk_monitor.sh
+- Tracks disk usage and free space.
 
-Tracks disk usage and free space.
+network_monitor.sh
 
-- network_monitor.sh
-
-Lists active network connections.
-
-Can be modified to detect unknown connections.
+- Lists active network connections.
+- Can be modified to detect unknown connections.
 
 
 ### Log Rotation Setup
